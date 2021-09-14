@@ -11,6 +11,11 @@
 
 import java.util.Scanner;
 
+/**
+ * The HOLEY GRAIIL
+ * @author 24wilber
+ * @version 9.15.2021
+ */
 public class HolyGrail {
     /**
      * Main
@@ -26,22 +31,22 @@ public class HolyGrail {
             "questions three, ere the other side he see.\n",
             "King Arthur says, \"You have to know these things when you're a king, you know.\"\n",
         };
-        Scanner Scann = new Scanner(System.in);
+        Scanner inputStuffFromTheConsoleSoForExampleThisScannerWillCollectDataFromTheUserInputFromTheConsoleLikeTheNameOfThePersonWhoIsWritingsStuffAndTheSupposedQuestAndTheirFavoriteColorAlthoughIDontKnowThatTheyWillActuallyTypeWhatTheyActuallyThinkIntoThisScannerSlashInputFromTheConsoleOrIfTheGradingSoftwareWillActuallyDoSomethingThatIsATrueThingSoYouNeverKnowWhatWillHappenSoYeaIGuessIDontKnowAndReallyIAmJustHereToComplainAboutHowPeopleStillUseTimesNewRoman__IMeanItIsAnOkayFontButItIsNotTheBest_ItSaysNothing___AndThatsIt_NOTHING_IHateIt__ = new Scanner(System.in);
         for (String s : FirstText) {
             System.out.print(s);
         }
         //MARK - Questions
         System.out.print("Question 1: What is your name? ");
-        Name = Scann.nextLine();
+        Name = inputStuffFromTheConsoleSoForExampleThisScannerWillCollectDataFromTheUserInputFromTheConsoleLikeTheNameOfThePersonWhoIsWritingsStuffAndTheSupposedQuestAndTheirFavoriteColorAlthoughIDontKnowThatTheyWillActuallyTypeWhatTheyActuallyThinkIntoThisScannerSlashInputFromTheConsoleOrIfTheGradingSoftwareWillActuallyDoSomethingThatIsATrueThingSoYouNeverKnowWhatWillHappenSoYeaIGuessIDontKnowAndReallyIAmJustHereToComplainAboutHowPeopleStillUseTimesNewRoman__IMeanItIsAnOkayFontButItIsNotTheBest_ItSaysNothing___AndThatsIt_NOTHING_IHateIt__.nextLine();
         System.out.print("Question 2: What is your quest? ");
-        Quest = Scann.nextLine();
+        Quest = inputStuffFromTheConsoleSoForExampleThisScannerWillCollectDataFromTheUserInputFromTheConsoleLikeTheNameOfThePersonWhoIsWritingsStuffAndTheSupposedQuestAndTheirFavoriteColorAlthoughIDontKnowThatTheyWillActuallyTypeWhatTheyActuallyThinkIntoThisScannerSlashInputFromTheConsoleOrIfTheGradingSoftwareWillActuallyDoSomethingThatIsATrueThingSoYouNeverKnowWhatWillHappenSoYeaIGuessIDontKnowAndReallyIAmJustHereToComplainAboutHowPeopleStillUseTimesNewRoman__IMeanItIsAnOkayFontButItIsNotTheBest_ItSaysNothing___AndThatsIt_NOTHING_IHateIt__.nextLine();
         System.out.print("Question 3: What is your favorite color? ");
-        Color = Scann.nextLine();
+        Color = inputStuffFromTheConsoleSoForExampleThisScannerWillCollectDataFromTheUserInputFromTheConsoleLikeTheNameOfThePersonWhoIsWritingsStuffAndTheSupposedQuestAndTheirFavoriteColorAlthoughIDontKnowThatTheyWillActuallyTypeWhatTheyActuallyThinkIntoThisScannerSlashInputFromTheConsoleOrIfTheGradingSoftwareWillActuallyDoSomethingThatIsATrueThingSoYouNeverKnowWhatWillHappenSoYeaIGuessIDontKnowAndReallyIAmJustHereToComplainAboutHowPeopleStillUseTimesNewRoman__IMeanItIsAnOkayFontButItIsNotTheBest_ItSaysNothing___AndThatsIt_NOTHING_IHateIt__.nextLine();
 
         System.out.println("Your name is: "+Name);
         System.out.println("Your quest is: "+Quest);
         System.out.println("Your favorite color is: "+Color);
         System.out.println("* end of program *");
-        Scann.close();
+        inputStuffFromTheConsoleSoForExampleThisScannerWillCollectDataFromTheUserInputFromTheConsoleLikeTheNameOfThePersonWhoIsWritingsStuffAndTheSupposedQuestAndTheirFavoriteColorAlthoughIDontKnowThatTheyWillActuallyTypeWhatTheyActuallyThinkIntoThisScannerSlashInputFromTheConsoleOrIfTheGradingSoftwareWillActuallyDoSomethingThatIsATrueThingSoYouNeverKnowWhatWillHappenSoYeaIGuessIDontKnowAndReallyIAmJustHereToComplainAboutHowPeopleStillUseTimesNewRoman__IMeanItIsAnOkayFontButItIsNotTheBest_ItSaysNothing___AndThatsIt_NOTHING_IHateIt__.close();
     }
 }
