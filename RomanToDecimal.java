@@ -77,7 +77,6 @@ public class RomanToDecimal {
             }
         }
     }
-
     /**
      * An enum for all of the known Roman Numerals
      */
