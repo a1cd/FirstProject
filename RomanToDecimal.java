@@ -14,6 +14,7 @@
  * @author 24wilber
  * @version 10.3.2021
  */
+@SuppressWarnings("WrongPackageStatement")
 public class RomanToDecimal {
 
     /**
@@ -78,7 +79,7 @@ public class RomanToDecimal {
         }
     }
     /**
-     * An enum for all of the known Roman Numerals
+     * An enum for all the known Roman Numerals
      */
     public enum romanDigit {
         I,
@@ -95,14 +96,28 @@ public class RomanToDecimal {
         public int toInt() {
             int value = -1;
             switch (this) {
-                case I -> value = 1;
-                case V -> value = 5;
-                case X -> value = 10;
-                case L -> value = 50;
-                case C -> value = 100;
-                case D -> value = 500;
-                case M -> value = 1000;
-//                default -> {
+                case I: {
+                    value = 1;
+                }
+                case V: {
+                    value = 5;
+                }
+                case X: {
+                    value = 10;
+                }
+                case L: {
+                    value = 50;
+                }
+                case C: {
+                    value = 100;
+                }
+                case D: {
+                    value = 500;
+                }
+                case M: {
+                    value = 1000;
+                }
+//                default: {
 //                    System.out.println( "ERROR");
 //                    value = -1;
 //                }
@@ -117,9 +132,9 @@ public class RomanToDecimal {
         /**
          * Gets the level the digit is on
          * Example:
-         *  I -> 1
-         *  V -> 2
-         *  X -> 3
+         *  I: 1
+         *  V: 2
+         *  X: 3
          *  and so forth
          * This allows me to check how many levels the digits decrease. If it is more than two, then it is invalid.
          * @return the level the digit is on
