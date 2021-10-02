@@ -4,8 +4,9 @@
 name: Java CI
 
 on:
-  workflow_dispatch:
-    
+  workflow_call:
+    inputs:
+      
   push:
     branches: [ master ]
   pull_request:
