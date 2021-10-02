@@ -28,8 +28,8 @@
     </target>
 
     <target name="compile" depends="init">
-        <javac destdir="build/main" srcdir="src/main/java" includeantruntime="false"/>
-        <javac destdir="build/test" classpathref="test.classpath" srcdir="src/test/java" includeantruntime="false"/>
+        <javac destdir="build/main" srcdir="." includeantruntime="false"/>
+        <javac destdir="build/test" classpathref="test.classpath" srcdir="." includeantruntime="false"/>
     </target>
 
     <!-- https://junit.org/junit5/docs/snapshot/user-guide/#running-tests-build-ant -->
