@@ -13,7 +13,7 @@
 	<property name="web.dir" value="war" />
 	<property name="web.classes.dir" location="${web.dir}/WEB-INF/classes" />
 
-<!-- 	<!-- ivy start -->
+	<!--
 	<target name="resolve" description="retrieve dependencies with ivy">
 		<echo message="Getting dependencies..." />
 		<ivy:retrieve />
