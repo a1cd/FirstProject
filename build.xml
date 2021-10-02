@@ -29,14 +29,12 @@
 
     <target name="compile" depends="init">
         <javac destdir="build/main" srcdir="." includeantruntime="false">
-            <compilerarg value="--enable-preview"/>
             <compilerarg value="--release"/>
-            <compilerarg value="15"/>
+            <compilerarg value="16"/>
         </javac>
         <javac destdir="build/test" classpathref="test.classpath" srcdir="." includeantruntime="false">
-            <compilerarg value="--enable-preview"/>
             <compilerarg value="--release"/>
-            <compilerarg value="15"/>
+            <compilerarg value="16"/>
         </javac>
     </target>
 
