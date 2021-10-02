@@ -6,7 +6,6 @@ name: Java CI
 on:
   workflow_call:
     inputs:
-      
   push:
     branches: [ master , ant]
   pull_request:
