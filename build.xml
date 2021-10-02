@@ -1,5 +1,4 @@
-<project xmlns:ivy="antlib:org.apache.ivy.ant" 
-	name="FirstProject" default="main" basedir=".">
+<project name="FirstProject" default="main" basedir=".">
 	<description>
 		Running junit Test 
 	</description>
@@ -22,7 +21,8 @@
 		<ivy:cachepath pathid="runtime.path" conf="runtime" />
 		<ivy:cachepath pathid="test.path" conf="test" />
 
-	</target> -->
+	</target> 
+	-->
 
 	<!-- Compile Java source from ${src.dir} and output it to ${web.classes.dir} -->
 	<target name="compile" depends="init, resolve" description="compile source code">
