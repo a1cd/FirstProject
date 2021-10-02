@@ -8,7 +8,7 @@ on:
     inputs:
       
   push:
-    branches: [ master ]
+    branches: [ master , ant]
   pull_request:
     branches: [ master ]
   
