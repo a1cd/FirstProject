@@ -8,6 +8,21 @@
             </not>
         </condition>
     </fail>
+    
+    <!-- JUnit classpath. -->
+    <path id="junit.class.path">
+        <fileset dir="lib/main" includes="*.jar"/>
+        <fileset dir="lib/test" includes="*.jar"/>
+        <pathelement location="bin/main"/>
+        <pathelement location="bin/test"/>
+    </path>
+    
+    <classpath>
+        <path refid="your.classpath.refid" />
+        <fileset dir="${junit.dir}">
+            <include name="**/junit.jar" />
+        </fileset>
+    </classpath>
 
     <path id="test.classpath">
         <pathelement path="build/test"/>
