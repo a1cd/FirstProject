@@ -29,9 +29,11 @@
 
     <target name="compile" depends="init">
         <javac destdir="build/main" srcdir="." includeantruntime="false">
-            <compilerarg arg="-Xbootclasspath/p:${toString:lib.path.ref}"/>
+            <compilerarg value="--enable-preview"/>
         </javac>
-        <javac destdir="build/test" classpathref="test.classpath" srcdir="." includeantruntime="false"/>
+        <javac destdir="build/test" classpathref="test.classpath" srcdir="." includeantruntime="false">
+            <compilerarg value="--enable-preview"/>
+        </javac>
     </target>
 
     <!-- https://junit.org/junit5/docs/snapshot/user-guide/#running-tests-build-ant -->
