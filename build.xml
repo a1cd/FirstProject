@@ -1,5 +1,5 @@
 <project xmlns:ivy="antlib:org.apache.ivy.ant" 
-	name="HelloProject" default="main" basedir=".">
+	name="FirstProject" default="main" basedir=".">
 	<description>
 		Running junit Test 
 	</description>
