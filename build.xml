@@ -28,7 +28,9 @@
     </target>
 
     <target name="compile" depends="init">
-        <javac destdir="build/main" srcdir="." includeantruntime="false"/>
+        <javac destdir="build/main" srcdir="." includeantruntime="false">
+            <compilerarg arg="-Xbootclasspath/p:${toString:lib.path.ref}"/>
+        </javac>
         <javac destdir="build/test" classpathref="test.classpath" srcdir="." includeantruntime="false"/>
     </target>
 
