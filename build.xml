@@ -17,12 +17,12 @@
         <pathelement location="bin/test"/>
     </path>
     
-    <classpath>
+<!--     <classpath>
         <path refid="your.classpath.refid" />
         <fileset dir="${junit.dir}">
             <include name="**/junit.jar" />
         </fileset>
-    </classpath>
+    </classpath> -->
 
     <path id="test.classpath">
         <pathelement path="build/test"/>
