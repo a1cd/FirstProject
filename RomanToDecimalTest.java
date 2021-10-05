@@ -15,7 +15,6 @@ import org.junit.Test;
 import java.util.Dictionary;
 
 import static org.junit.Assert.*;
-//import static org.junit.function.*;
 public class RomanToDecimalTest {
     @Test
     public void romanToDecimal() {
