@@ -24,30 +24,30 @@ public class RomanToDecimalTest {
     }
     @Test 
     public void NormalAndInvariants() {
-        assertEquals(259,RomanToDecimal.romanToDecimal("CCLIX"));
-        assertEquals(4,RomanToDecimal.romanToDecimal("IV"));
-        assertEquals(1983,RomanToDecimal.romanToDecimal("MCMLXXXIII"));
-        assertEquals(1021,RomanToDecimal.romanToDecimal("MXXI"));
-        assertEquals(521,RomanToDecimal.romanToDecimal("DXXI"));
-        assertEquals(1994,RomanToDecimal.romanToDecimal("MCMXCIV"));
-        assertEquals(109,RomanToDecimal.romanToDecimal("CIX"));
-        assertEquals(1090,RomanToDecimal.romanToDecimal("MXC"));
+        Assert.assertEquals(259,RomanToDecimal.romanToDecimal("CCLIX"));
+        Assert.assertEquals(4,RomanToDecimal.romanToDecimal("IV"));
+        Assert.assertEquals(1983,RomanToDecimal.romanToDecimal("MCMLXXXIII"));
+        Assert.assertEquals(1021,RomanToDecimal.romanToDecimal("MXXI"));
+        Assert.assertEquals(521,RomanToDecimal.romanToDecimal("DXXI"));
+        Assert.assertEquals(1994,RomanToDecimal.romanToDecimal("MCMXCIV"));
+        Assert.assertEquals(109,RomanToDecimal.romanToDecimal("CIX"));
+        Assert.assertEquals(1090,RomanToDecimal.romanToDecimal("MXC"));
     }
     @Test 
     public void LogicallyIncorrect() {
-        assertNotEquals(47, RomanToDecimal.romanToDecimal("IVIVIVIXIXIX"));
-        assertEquals(9,RomanToDecimal.romanToDecimal("IX"));
-        assertEquals(900,RomanToDecimal.romanToDecimal("CM"));
-        assertEquals(4,RomanToDecimal.romanToDecimal("IV"));
-        assertEquals(8,RomanToDecimal.romanToDecimal("IIX")); // weird but still works
+        Assert.assertNotEquals(47, RomanToDecimal.romanToDecimal("IVIVIVIXIXIX"));
+        Assert.assertEquals(9,RomanToDecimal.romanToDecimal("IX"));
+        Assert.assertEquals(900,RomanToDecimal.romanToDecimal("CM"));
+        Assert.assertEquals(4,RomanToDecimal.romanToDecimal("IV"));
+        Assert.assertEquals(8,RomanToDecimal.romanToDecimal("IIX")); // weird but still works
 
     }
     @Test 
     public void Invalid() {
-        assertEquals(-1,RomanToDecimal.romanToDecimal("IC"));
-        assertEquals(-1,RomanToDecimal.romanToDecimal("HAHA"));
-        assertNotEquals(4,RomanToDecimal.romanToDecimal("BeBopBoop"));
-        assertNotEquals(1000, RomanToDecimal.romanToDecimal("oops"));
+        Assert.assertEquals(-1,RomanToDecimal.romanToDecimal("IC"));
+        Assert.assertEquals(-1,RomanToDecimal.romanToDecimal("HAHA"));
+        Assert.assertNotEquals(4,RomanToDecimal.romanToDecimal("BeBopBoop"));
+        Assert.assertNotEquals(1000, RomanToDecimal.romanToDecimal("oops"));
     }
     @Test 
     public void TestMain() {
@@ -63,8 +63,8 @@ public class RomanToDecimalTest {
     @SuppressWarnings("CodeBlock2Expr")
     @Test
     public void romanToDecimalThrows() {
-        assertThrows(Exception.class, () -> {RomanToDecimal.romanToDecimalThrows("Oops");});
-        assertThrows(Exception.class, () -> {RomanToDecimal.romanToDecimalThrows("IM");}); // Should throw because it is a level difference > 2
+        Assert.assertThrows(Exception.class, () -> {RomanToDecimal.romanToDecimalThrows("Oops");});
+        Assert.assertThrows(Exception.class, () -> {RomanToDecimal.romanToDecimalThrows("IM");}); // Should throw because it is a level difference > 2
     }
 
     @Test
