@@ -9,7 +9,7 @@
  ╰────────────────────────────────────────────────────╯
  */
 import com.sun.tools.javac.Main;
-import org.junit.Assert;
+import org.junit.Assert.*;
 import org.junit.Test;
 
 import java.util.Dictionary;
