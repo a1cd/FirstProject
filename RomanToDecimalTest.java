@@ -15,6 +15,12 @@ import org.junit.Test;
 import java.util.Dictionary;
 
 import static org.junit.Assert.*;
+
+/**
+ * Tests for RomanToDecimal
+ * @author 24wilber
+ * @version 2021.10.03
+ */
 public class RomanToDecimalTest {
     @Test
     public void romanToDecimal() {
