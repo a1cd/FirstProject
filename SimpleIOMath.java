@@ -13,6 +13,9 @@ import java.util.Scanner;
 
 /**
  * <H1>SimpleIOMath</H1>
+ * For this project, we were tasked with creating a class. When it is run through the main 
+ * method will ask a series of questions. After they are answered, the program will tell the
+ * user some information related to the information given.
  * @version 9.27.2021
  * @author 24wilber
  */
